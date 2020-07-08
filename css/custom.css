@@ -86,7 +86,25 @@ html {
 .li-custom {
     font-size: 36px;
 }
+.lable-custom {
+    font-size: 25px;
+}
 
+.btn-primary-custom {
+    background-color: rgba(237, 86, 10, 1.0);
+    color: white;
+}
+.btn-primary-custom:hover {
+    background-color: rgba(237, 86, 10, 0.77);
+    color: white;
+}
+
+.btn:hover {
+    color: white;
+}
+.btn-link:hover{
+    color: rgba(237, 86, 10, 1.0);;
+}
 /*——————————————
 TimeLine CSS
 ———————————————*/
