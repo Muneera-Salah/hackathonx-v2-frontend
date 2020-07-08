@@ -111,45 +111,93 @@
     </div><!-- /.jumbotron -->
 
     <div class="jumbotron text-center album py-5 bg-light animsition-fade-up">
-        <div class="container custom-bg-color ">
-
-            <h1 class="text-orange">
-                تسجيل الدخول
-            </h1>
+        <div class="container custom-bg-color text-center">
+            <h1 class="text-orange text-center">تسجيل جديد</h1>
             <br />
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-3">
 
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="card shadow-sm ">
                     <div class="card-body text-center">
 
                         <form>
                             <div class="form-group">
+                                <label for="name" class="lable-custom text-purple">الاسم الكامل</label>
+                                <input type="text" class="form-control text-center" id="name"
+                                    placeholder="الاسم الكامل">
+                            </div>
+
+                            <div class="form-group">
                                 <label for="email" class="lable-custom text-purple">البريد الإلكتروني</label>
                                 <input type="email" class="form-control text-center custom-en-text " id="email"
                                     placeholder="email@email.com">
                             </div>
+
                             <div class="form-group">
-                                <label for="password" class="lable-custom  text-purple">كلمة المرور</label>
+                                <label for="password" class="lable-custom text-purple">كلمة المرور</label>
                                 <input type="password" class="form-control text-center" id="password">
                             </div>
+
+                            <div class="form-group">
+                                <label for="c-password" class="lable-custom text-purple">تأكيد كلمة المرور</label>
+                                <input type="password" class="form-control text-center" id="c-password">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="age" class="lable-custom text-purple">العمر</label>
+                                <input type="number" class="form-control text-center" id="age">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="lable-custom text-purple">رقم الجوال</label>
+                                <input type="number" class="form-control text-center" id="phone">
+                            </div>
+
+                            <div class="form-group">
+                                <div role="group" class="btn-group">
+                                    <button type="button" id="type_button3" onclick="change_type(3)"
+                                        class="btn btn-secondary">رائد
+                                        أعمال
+                                    </button>
+                                    <button type="button" id="type_button2" onclick="change_type(2)"
+                                        class="btn btn-secondary">
+
+                                        مصمم</button>
+                                    <button type="button" id="type_button1" onclick="change_type(1)"
+                                        class="btn btn-secondary">
+                                        مبرمج
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div role="group" class="btn-group ">
+                                    <button type="button" id="gender_button2" onclick="change_gender(2)"
+                                        class="btn btn-secondary">
+                                        أنثى
+                                    </button>
+                                    <button type="button" id="gender_button1" onclick="change_gender(1)"
+                                        class="btn btn-secondary">
+                                        ذكر
+                                    </button>
+                                </div>
+                            </div>
+
                             <div class="row">
                                 <div class="col-6 text-left">
-                              
-                                <button type="submit" class="btn btn-primary-custom hvr-grow">تسجيل دخول
-                                    <i class="fa fa-sign-in" aria-hidden="true"></i>
-                                </button>
-                            </div>
-                            <div class="col-6 text-right">
-                                <a href="password-reset.html" class="btn btn-link text-purple text-right">
-                                    استعادة كلمة المرور؟
-                                </a>
+                                    <button type="submit" class="btn btn-primary-custom hvr-grow">تسجيل
+                                        <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <a href="login.html" class="btn btn-link text-purple text-right">
+                                       تسجيل دخول
+                                    </a>
 
-                            </div>
+                                </div>
                             </div>
                         </form>
 
@@ -157,7 +205,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-2">
 
             </div>
 

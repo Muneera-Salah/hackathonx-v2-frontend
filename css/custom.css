@@ -22,7 +22,7 @@ h6 {
     direction  : rtl;
 }
 
-body {
+body ,input {
     font-family: "XMYekan";
 }
 
