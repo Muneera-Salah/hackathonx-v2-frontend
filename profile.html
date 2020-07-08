@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="HackathonX">
+    <link href="img/logo-small.png" rel="shortcut icon" />
+
+
+    <title>HackathonX</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Custom liabrary -->
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/hover/hover-min.css">
+
+    <!-- animsition library -->
+    <link rel="stylesheet" href="css/animsition/animsition.min.css">
+    <script src="css/animsition/animsition.js"></script>
+
+
+
+    <!-- Custom bootstrap CSS  -->
+    <link href="css/bootstrap/carousel.css" rel="stylesheet">
+    <link href="css/bootstrap/pricing.css" rel="stylesheet">
+
+
+    <!-- Custom styles for HackathonX  -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <script>
+        $(document).ready(function () {
+            $('.animsition').animsition();
+            //====== Frames ========
+
+            //mainFrame
+            $('.animsition-main').animsition({
+                inClass: 'zoom-in-sm',
+                outClass: 'zoom-out-sm'
+            });
+
+            $('.animsition-zoom').animsition({
+                inClass: 'zoom-in-sm',
+                outClass: 'zoom-out-sm'
+            });
+
+            $('.animsition-fade-up').animsition({
+                inClass: 'fade-in-up-sm',
+                outClass: 'fade-out-up-sm'
+            });
+
+            $('.animsition-fade-right').animsition({
+                inClass: 'fade-in-right-sm',
+                outClass: 'fade-out-right-sm'
+            });
+
+            $('.animsition-fade-left').animsition({
+                inClass: 'fade-in-left-sm',
+                outClass: 'fade-out-left-sm'
+            });
+
+            $('.animsition-fade-up').animsition({
+                inClass: 'fade-in-up-lg',
+                outClass: 'fade-out-up-lg'
+            });
+
+        });
+    </script>
+</head>
+
+<body class="animsition animsition-main">
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-0 bg-white border-bottom shadow-sm">
+        <h5 class="my-0 mr-md-auto font-weight-normal">
+            <a href="https://twitter.com/hackathon_x" target="_blank">
+                <i class="fa fa-twitter text-purple" aria-hidden="true"></i>
+            </a>
+        </h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 text-purple" href="index.html">الرئيسية</a>
+            <a class="p-2 text-purple" href="index.html#team">من نحن</a>
+            <a class="p-2 text-orange" href="index.html">تسجيل خروج</a>
+        </nav>
+        <a class="" href="#"> <img src="img/logo-big.png" alt="logo" class="logo"></a>
+    </div>
+
+
+    <div class="jumbotron text-right custom-bg-img">
+        <div class="container custom-bg-color animsition-zoom">
+            <h1 class="text-orange">
+                هاكثون إكس الصيفي
+            </h1>
+        </div>
+    </div><!-- /.jumbotron -->
+
+    <div class="jumbotron text-center album py-5 bg-light animsition-fade-up">
+        <div class="container custom-bg-color">
+            <h1 class="text-purple">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                الملف الشخصي
+            </h1>
+            <br />
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">المعلومات الشخصية</div>
+                    <div class="card-body custom-en-text">
+                        <label>Name : muneera.salah@gmail.com</label><br> 
+                        <label>Age : 29</label><br>
+                        <label>Member's Role : </label><br> 
+                        <label>phone : 0568872040</label><br> <label>Number of
+                            hackathons : 0</label><br> 
+                            <label>Honesty level : 100</label><br></div>
+                </div> <br>
+                <div class="card">
+                    <div class="card-header">معلومات الفريق</div>
+                    <div class="card-body"><label>انت غير مسجل في اي فريق حالياً</label><br> <button type="button"
+                            data-toggle="modal" data-target="#exampleModal" class="btn btn-primary-custom">
+                            إنشاء فريق جديد <i class="fa fa-user-plus" aria-hidden="true"></i>
+                        </button>
+                        <div id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true" class="modal fade">
+                            <div role="document" class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 id="exampleModalLabel" class="modal-title text-orange">
+                                            <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                            إنشاء فريق</h5> <button type="button" data-dismiss="modal"
+                                            aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form method="post" action="http://localhost/hackathonx_v2/public/team/create">
+                                            <input type="hidden" name="_token"
+                                                value="rlJeyuxtrhP37kUMoGIxWvkRpeiVcc32sM4CMnJs">
+                                            <div class="form-group">
+                                                <label class="text-orange">اسم الفريق</label>
+                                                <input type="text" name="team_name" required="required"
+                                                    class="form-control">
+                                            </div>
+                                            <div class="form-group text-purple">
+                                                <label class="text-purple">العضو الثاني</label>
+                                                <input type="text" name="second_member" placeholder="example@gmail.com"
+                                                    class="form-control custom-en-text">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-purple">العضو الثالث</label>
+                                                <input type="text" name="third_member" placeholder="example@gmail.com"
+                                                    class="form-control custom-en-text">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="text-purple">العضو الرابع</label>
+                                                <input type="text" name="fourth_member" placeholder="example@gmail.com"
+                                                    class="form-control custom-en-text">
+                                            </div>
+                                            <button type="button" data-dismiss="modal"
+                                                class="btn btn-secondary">إلغاء</button>
+                                            <button type="submit" class="btn btn-primary-custom">
+                                                إنشاء الفريق
+                                                <i class="fa fa-user-plus" aria-hidden="true"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <br>
+                <div class="card">
+                    <div class="card-header">الهاكاثونات الحالية</div>
+                    <div class="card-body align-content-center"><label>لا توجد هاكاثونات للتسجيل حالياً</label></div>
+                </div> <br>
+                <div class="card">
+                    <div class="card-header">طلبات الإنضمام</div>
+                    <div class="card-body"><label>:الدعوات</label>
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col custom-en-text">Team</th>
+                                    <th scope="col custom-en-text">Leader</th>
+                                    <th scope="col custom-en-text">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+    </div><!-- /.jumbotron -->
+
+
+    <br />
+    <br />
+
+    <!-- FOOTER -->
+    <footer class="custom-en-text">
+        <div class="text-right">
+            <div class="col-lg-11">
+                <p class="text-right"><a href="#" class="text-orange"><i class="fa fa-arrow-up" aria-hidden="true"></i>
+                        Back to top</a></p>
+            </div>
+            <div class="col-lg-1">
+            </div>
+        </div>
+
+
+        <svg viewBox="0 0 1440 178">
+            <defs>
+                <linearGradient id="Gradient1" x1="0" x2="1" y1="0" y2="1">
+                    <stop offset="0%" stop-color="#442672" />
+                    <stop offset="100%" stop-color="#291050" />
+                </linearGradient>
+            </defs>
+
+            <path
+                d="M1439,0 L1440,0 L1440,178 L0,178 L0,110.3817 C372.259672,195.829187 1299.44761,23.0287189 1439,23.0287189 L1439,0 Z"
+                style="stroke: none; fill:url(#Gradient1);">
+            </path>
+            <text x="550" y="150" font-size="20px" fill="white">Copyright &copy; HackathonX
+                2020</text>
+        </svg>
+    </footer>
+
+
+
+    <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
